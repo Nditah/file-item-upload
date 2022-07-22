@@ -15,8 +15,14 @@
     <p>Please select a file and submit the form to upload an asset to your DigitalOcean Space.</p>
 
     <form method="post" enctype="multipart/form-data" action="/file-upload">
-      <label for="upload">Upload a file</label>
-      <input type="file" name="upload" id="upload">
+      <label for="folder">Folder name</label>
+      <input type="text" name="folder" id="folder">
+      <br/>
+      <label for="file1">Upload a file</label>
+      <input type="file" name="file1" id="file1">
+      <br/>
+      <label for="base64String">base64String</label>
+      <textarea name="base64String" id="base64String"></textarea>
       <br/>
       <button type="submit">Upload</button>
     </form>
